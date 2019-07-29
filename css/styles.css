@@ -1,10 +1,66 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Oxygen|Quicksand&display=swap');
 
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+body {
+    background-color: rgba(255, 165, 0, 0.9);
+    overflow-x: hidden;
+}
+
+.container-full {
+    background-color: rgba(255, 165, 0, 0.9);
+}
+
+#footer {
+    background-color: rgba(255, 165, 0, 0.9);
+}
+
+.btn-info {
+    color: rgba(255, 255, 255, 0.9);
+    background-color:rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+button.btn.btn-light:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
 .jumbotron {
-	background-image: url(../images/background.jpg);
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+}
+
+.jumbotron p {
+    text-align: left;
+    color: white;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding: 1%;
+}
+
+.jumbotron h1 {
+    font-size: 7.5rem;
+    color: rgba(255, 165, 0, 0.9);
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    margin: -3%;
 }
 
 h1, .h1 {
@@ -15,11 +71,70 @@ h1, .h1 {
     font-family: 'Quicksand', sans-serif;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
+h5, .h5 {
+    font-size: 2.5rem;
     color: white;
+    text-align: center;
+    padding: 2%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#goodyModal h5 {
+    font-size: 1.5  rem;
+}
+
+h6 {
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin-top: 5px;
+    padding: 2%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: black;
     font-size: medium;
     text-align: center;
-    padding-right: 13%;
+    padding: 2%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div#pizzamenu1, div#pizzamenu2, div#pizzamenu3, div#pizzamenu4, div#pizzamenu5, div#pizzamenu6, div#pizzamenu7, div#pizzamenu8 {
+    margin-bottom: 3%;
+}
+
+img.w-100 {
+    margin-top: 4%;
+}
+
+#aboutus p{
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    padding: 2%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+div#panel1, div#panel2, div#panel3, div#panel4, div#panel5, div#panel6,div#panel7, div#panel8    {
+  
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.0;
 }
