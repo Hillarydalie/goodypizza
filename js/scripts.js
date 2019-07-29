@@ -20,22 +20,28 @@ $(document).ready(function(){
 
 	// This will give our value for the seleced Pizza size
 	var pizzaSize = 0;
+	var crustType = 0;
+	var toppingsChosen = 0;
 
 	$("form#pizzaorder").submit (function(){
 		for (var j=0; j< document.getElementsByName("pizzaslected").length;j++){
 			if (document.getElementsByName("pizzaslected")[j].checked)
 				pizzaSize = parseInt(document.getElementsByName("pizzaslected")[j].value);
 		}
-	})
 
-	//This will give our value for the selected crust
-	var crustType = 0;
-
-	$("form#crustselected").submit (function(){
-		for (var j=0; i< document.getElementsByName("crustselected").length;i++){
-			if (document.getElementsByName("crustselected")[i].checked)
+		//This will give our value for the selected crust
+		for (var j=0; j< document.getElementsByName("crustselected").length;j++){
+			if (document.getElementsByName("crustselected")[j].checked)
 				crustType = parseInt(document.getElementsByName("crustselected")[j].value);
 		}
-		alert(crustType);
+		
+		//This will give our checkbox for topppings value
+		for (var j=0; j< document.getElementsByName("toppingsselected").length;j++){
+			if (document.getElementsByName("toppingsselected")[j].checked)
+				toppingsChosen = toppingsChosen + parseInt(document.getElementsByName("toppingsselected")[j].value);
+		}
+
+		//This will give a=our quantity checkbox
+		
 	})
 });
