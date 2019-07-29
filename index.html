@@ -1,42 +1,191 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-		<script src="js/jquery-3.4.1.js" type="text/javascript"></script>
-		<script src="js/scripts.js" type="text/javascript"></script>
-		<title>Goody Pizza</title>
-	</head>
-	<body>
-		<!-- This is the dom containing the website content -->
-		<div class="container-full">
-			<div class="jumbotron">
-				<!-- Navigation bar will placed here! -->
-				<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-				    <ul class="navbar-nav">
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">ABOUT US</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">CONTACT US</a>
-				      </li>
-				    </ul>
-				  </div>
-				</nav>
-				<div class="col-md-8">
-					<!--This is the site title -->
-					<h1>Goody Pizza</h1>
-					<!-- This is the site tagline for Goody pizza -->
-					<p>They say pizza is a good thing, let's stick to what they say</p>
-				</div>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delani | Studio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jquery script -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js" ></script>
+  </head>
+  <body>
+    <div class="container-full">
+      <!-- jumbotron -->
+		<div class="jumbotron">
+			<h1>GOODY <br> PIZZA</h1>
+			<p>You will always have a PIZZA my heart.</p>
+		</div>
+		<!-- end of jumbotron -->
+		<!-- about -->
+		<div class="container" id="aboutus">
+			<div class="panel about">
+			<h5>ABOUT US</h5>
+			<p>
+			With a willing heart to share an Italian Tradition the founders of Goody Pizza poured all their heart and passion to recreate the original wood fired Pizza from Nairobi Kenya. 
+			Goody Pizza uses the Mwihoko tomatoes directly from Tharaka Nithi to create their fabulous sauce.
+			Organic and fresh ingredients are the main focus when it comes to create the best Pizza on Earth at Goody Pizza.
+			The taste of these Pizzas will wake up your senses.Your taste buds, will join in a symphony of flavors bringing you to that little Kenyan town with the country side vineyard, the dirt road and that table on the shade under the olive tree.
+
+			Goody Pizza is a Family Restaurant with the mission of constantly offering freshness and quality in your dinning experience.
+			Goody Pizza’s vision is to be the best Wood Fired Pizza in Africa. We invite your family to be part of our family and join us on this long journey on a road of friendships and relationships that will surpassed time and matter.
+			</p>
+			</div>
+		</div>	
+      <!-- end of about -->
+    <!-- Pizza Menu -->
+    <div class="container" id="menu">
+		<h5>MENU</h5>
+		<div class="row">
+	        <div class="col-md-3 pizzamenu1" id="pizzamenu1">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+				<img  class ="w-100" src="images/slider1.jpg">
+				<h6>THE REUBEN PIZZA</h6>
+				<p>
+				Clove island dressing, canadian bacon, sauerkraut, mozzarella topped with lettuce.
+				</p>
+				<div id="panel1"><p>Click to order</p></div>
+				</button>
+	        </div>
+	        <div class="col-md-3 pizzamenu2" id="pizzamenu2">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+				<img  class ="w-100" src="images/slider2.jpg">
+				<h6>BUFFALO CHICKEN</h6>
+				<p>
+				hot sauce, grilled chicken, onion, tomato, canadian bacon, mozzarella, cheddar and sausages.
+				</p>
+				<div id="panel2"><p>Click to order</p></div>
+				</button>
+	        </div>
+	        <div class="col-md-3 pizzamenu3" id="pizzamenu3">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+				<img  class ="w-100" src="images/slider3.jpg">
+				<h6>CLASSIC B.L.T</h6>
+				<p>
+				pizza sauce, bacon, mozzarella, cheddar, topped w/ lettuce & tomato, w/mayo packets
+				</p>
+				<div id="panel3"><p>Click to order</p></div>
+				</button>
+	        </div>
+	        <div class="col-md-3 pizzamenu4" id="pizzamenu4">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+				<img  class ="w-100" src="images/slider1.jpg">
+				<h6>CHICKEN CAESAR</h6>
+				<p>
+				caesar dressing, grilled chicken, mozzarella, topped with romaine lettuce & croutons
+				</p>
+				<div id="panel4"><p>Click to order</p></div>
+				</button>
+	        </div>
+		</div>
+		<div class="row">
+	        <div class="col-md-3 pizzamenu5" id="pizzamenu5">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+	          <img  class ="w-100" src="images/slider1.jpg">
+	          <h6>VEGGIE'S VICTORY</h6>
+	          <p>
+	          	pizza sauce, mushroom, onion, green pepper, tomato, black olive, mozzarella
+	          </p>
+	          <div id="panel5"><p>Click to order</p></div>
+	      </button>
+	        </div>
+	        <div class="col-md-3 pizzamenu6" id="pizzamenu6">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+	          <img  class = "w-100" src="images/slider2.jpg">
+	          <h6>GARLIC CHICKEN</h6>
+	          <p>
+	          	garlic butter, grilled chicken, onion, green pepper, garlic seasoning, mozzarella
+	          </p>
+	          <div id="panel6"><p>Click to order</p></div>
+	      </button>
+			</div>
+	        <div class="col-md-3 pizzamenu7" id="pizzamenu7">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+	          <img  class ="w-100" src="images/slider3.jpg">
+	          <h6>MEAT YOUR HEART OUT</h6>
+	          <p>
+	          	pizza sauce, sausage, pepperoni, canadian bacon, real bacon, mozzarella
+	          </p>
+	          <div id="panel7"><p>Click to order</p></div>
+	      </button>
+	        </div>
+	        <div class="col-md-3 pizzamenu8" id="pizzamenu8">
+	        	<!-- Trigger the modal for order a button -->
+	        	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#goodyModal">
+	          <img  class ="w-100" src="images/slider1.jpg">
+	          <h6>TASTY TACO</h6>
+	          <p>
+	          	pizza sauce, taco seasoning, mozzarella, cheddar & taco chips, w/taco sauce packets
+	          </p>
+	          <div id="panel8"><p>Click to order</p></div>
+	        </div>
+		</div>
+	</div>
+	<!-- End of Menu section -->
+	<!-- Begining of Modal Class -->
+	<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade " id="goodyModal" tabindex="-1" role="dialog" aria-labelledby="goodyModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title" id="goodyModalTitle">Order a Pizza</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control form-control-sm" id="new-first-name" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control form-control-sm" id="new-last-name" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <label for="new-email-address">Email Address</label>
+              <input type="email" class="form-control form-control-sm" id="new-email-address" placeholder="mail@mail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="new-phone-number">Enter Phone Number here</label>
+              <input class="form-control form-control-sm" type="tel" placeholder="+254722123456" maxlength="13" id="new-phone-number" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Order</button>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Total Costs</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- End of Modal -->
+    <!-- footer -->
+
+
+		<div class="container" id="footer">
+			<div class=" col-md-12  text-center" >
+        		<p>GOODY PIZZA 2019</p>
 			</div>
 		</div>
-	</body>
+
+
+ <!-- end of div container -->
+   </div>
+
+  </body>
 </html>
