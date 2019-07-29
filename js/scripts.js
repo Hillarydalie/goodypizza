@@ -1,5 +1,5 @@
 //Business Logis
-function pizzamenu(size, toppings, crust,){
+function pizzamenu(size, toppings, crust){
 this.size = size;
 this.toppings = toppings;
 this.crust = crust;
@@ -18,10 +18,13 @@ $(document).ready(function(){
 	  $(this).css("background-color", "#ffa500e6");
 	});
 
+	
+
 	// This will give our value for the seleced Pizza size
 	var pizzaSize = 0;
 	var crustType = 0;
 	var toppingsChosen = 0;
+
 
 	$("form#pizzaorder").submit (function(){
 		for (var j=0; j< document.getElementsByName("pizzaslected").length;j++){
@@ -41,7 +44,8 @@ $(document).ready(function(){
 				toppingsChosen = toppingsChosen + parseInt(document.getElementsByName("toppingsselected")[j].value);
 		}
 
-		//This will give a=our quantity checkbox
-		
+		var totalPizzaCost = new pizzamenu(pizzaSize, crustType, toppingsChosen);
+		totalPizzaCost.totalCost();
+		alert(totalPizzaCost.totalCost());
 	})
 });
